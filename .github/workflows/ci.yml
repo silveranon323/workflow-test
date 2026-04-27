@@ -18,5 +18,12 @@ jobs:
       - name : Prints current working directory
         run: pwd
 
+      - name : Installing nodejs
+        run : apt install nodejs npm
+       
+      - name : checking node version
+        run : node --version
+      
+
 
       
