@@ -18,8 +18,10 @@ jobs:
       - name : Prints current working directory
         run: pwd
 
-      - name : Installing nodejs
-        run : apt install nodejs npm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
        
       - name : checking node version
         run : node --version
